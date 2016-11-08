@@ -82,8 +82,41 @@ h1{
     font-size: 39vh;
     margin: 0;
     padding: 0;
+    color: white;    
+    -webkit-animation: blinkText 0.7s infinite;
+            animation: blinkText 0.7s infinite;
     
 }
+@-webkit-keyframes blinkText{
+    0%{
+            -webkit-text-stroke: 0px black; 
+            color: black;
+
+            
+
+    }
+    100%{
+            color: white;
+            -webkit-text-stroke: 10px black;
+
+    }
+}
+@keyframes blinkText{
+    0%{
+            -webkit-text-stroke: 0px black;
+                        color: black;
+
+
+    }
+    100%{
+            -webkit-text-stroke: 10px black;
+                        color: white;
+
+
+    }
+}
+
+
 div h3{
     text-align: center;
 }
@@ -93,6 +126,7 @@ h3{
     margin:0;
     padding: 0;
 }
+
 
 
 
