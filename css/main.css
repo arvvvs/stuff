@@ -70,6 +70,9 @@ body, html{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+      display: flex;
+  align-items: center;
+  justify-content: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -82,12 +85,15 @@ h1{
 
     text-align: center;
     margin:0;
-    font-size: 25vh;
+    font-size: 20vh;
     /*padding: 0;*/
     color: white;    
     -webkit-animation: blinkText 0.7s infinite;
             animation: blinkText 0.7s infinite;
 
+}
+h2{
+    text-align:center;
 }
 @media only screen and (max-width: 600px) {
     h1 {
