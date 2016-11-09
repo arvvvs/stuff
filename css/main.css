@@ -63,30 +63,31 @@ textarea {
 
 body, html{
     height: 100%;
+    background: url('../img/finish-him.jpg') no-repeat center center fixed;
 }
 
 .container{
- display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
-   
 }
 h1{
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 
-    font-size: 39vh;
-    margin: 0;
-    padding: 0;
+
+    text-align: center;
+    margin:0;
+    font-size: 30vh;
+    /*padding: 0;*/
     color: white;    
     -webkit-animation: blinkText 0.7s infinite;
             animation: blinkText 0.7s infinite;
-    
+
 }
 @media only screen and (max-width: 600px) {
     h1 {
@@ -157,7 +158,6 @@ h3{
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 
@@ -169,7 +169,7 @@ h3{
 
 .hidden {
     display: none !important;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .visuallyhidden {
